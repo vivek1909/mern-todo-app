@@ -103,43 +103,45 @@ class EditTodo extends Component {
             />
           </div>
 
-          <div className="form-check form-check-inline">
-            <input
-              className="form-check-input"
-              type="radio"
-              name="priorityOptions"
-              id="priorityLow"
-              value="Low"
-              checked={this.state.todo_priority === "Low"}
-              onChange={this.onChangeTodoPriority}
-            />
-            <label className="form-check-label">Low</label>
-          </div>
+          <div className="form-group">
+            <div className="form-check form-check-inline">
+              <input
+                className="form-check-input"
+                type="radio"
+                name="priorityOptions"
+                id="priorityLow"
+                value="Low"
+                checked={this.state.todo_priority === "Low"}
+                onChange={this.onChangeTodoPriority}
+              />
+              <label className="form-check-label">Low</label>
+            </div>
 
-          <div className="form-check form-check-inline">
-            <input
-              className="form-check-input"
-              type="radio"
-              name="priorityOptions"
-              id="priorityMedium"
-              value="Medium"
-              checked={this.state.todo_priority === "Medium"}
-              onChange={this.onChangeTodoPriority}
-            />
-            <label className="form-check-label">Medium</label>
-          </div>
+            <div className="form-check form-check-inline">
+              <input
+                className="form-check-input"
+                type="radio"
+                name="priorityOptions"
+                id="priorityMedium"
+                value="Medium"
+                checked={this.state.todo_priority === "Medium"}
+                onChange={this.onChangeTodoPriority}
+              />
+              <label className="form-check-label">Medium</label>
+            </div>
 
-          <div className="form-check form-check-inline">
-            <input
-              className="form-check-input"
-              type="radio"
-              name="priorityOptions"
-              id="priorityHigh"
-              value="High"
-              checked={this.state.todo_priority === "High"}
-              onChange={this.onChangeTodoPriority}
-            />
-            <label className="form-check-label">High</label>
+            <div className="form-check form-check-inline">
+              <input
+                className="form-check-input"
+                type="radio"
+                name="priorityOptions"
+                id="priorityHigh"
+                value="High"
+                checked={this.state.todo_priority === "High"}
+                onChange={this.onChangeTodoPriority}
+              />
+              <label className="form-check-label">High</label>
+            </div>
           </div>
 
           <div className="form-check">
@@ -152,7 +154,9 @@ class EditTodo extends Component {
               checked={this.state.todo_completed}
               value={this.state.todo_completed}
             />
-            <label className="form-check-label">Completed</label>
+            <label className="form-check-label" htmlFor="completedCheckbox">
+              Completed
+            </label>
           </div>
           <br />
 

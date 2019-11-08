@@ -52,7 +52,7 @@ class TodosList extends Component {
               <th>Description</th>
               <th>Responsible</th>
               <th>Priority</th>
-              <th>Action</th>
+              <th>Actions</th>
             </tr>
           </thead>
           <tbody>{this.todoList()}</tbody>
